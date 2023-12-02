@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(../image/bg-repeat.jpg);
+  height: 100vh;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 1rem 1.3rem;
+  width: 60vw;
+  min-width: 790px;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 375px;
+  max-height: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  align-self: baseline;
+}
+
+.content p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.form {
+  background-color: #fff;
+  width: 365px;
+  max-height: 90%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #fff;
+
+  color: #a8a8a8;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form .field {
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.field small {
+  color: #f52e2e;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  display: none;
+}
+
+.field.error input,
+.field.error textarea {
+  display: block;
+  border: 2px solid #f52e2e;
+}
+
+.field.sucesso input,
+.field.sucesso textarea {
+  border: 2px solid #00c22b;
+}
+
+.field.error small {
+  display: block;
+}
+
+.form p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 6px;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.form button {
+  border: none;
+  padding: 12px 0;
+  background-color: #3ccc87;
+  margin-top: 1rem;
+
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .content {
+    text-align: center;
+    width: 95vw;
+    max-width: 450px;
+  }
+
+  .content h1 {
+    align-self: stretch;
+  }
+
+  .form {
+    width: 95vw;
+    max-width: 450px;
+  }
+}
